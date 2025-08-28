@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* layout better hoga */
+}
+
+/* Header background */
+header {
+    height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: darkblue; isko header pe apply karo, pura page pe nahi */
+  padding: 15px 50px;
+}
+
+/* Logo */
+#logo {
+  width: 300px;
+  height: 400px;
+  background-image: url('https://www.logo.wine/a/logo/Foodpanda/Foodpanda-Logo.wine.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-left: 10px; */
+  margin-right: 900px;
+}
+
+/* Navbar */
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+  color: #ffd700; /* Golden hover */
+}
+
+
+
+/* Page Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Menu Section */
+#menu {
+  flex: 1;
+  padding: 40px;
+  color: #333; /* normal text color */
+}
+
+#menu h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #e21b70; /* luxury gold color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid rgba(225,27,112,0.4);
+  padding-bottom: 10px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.food-card {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-card img {
+  width: 100%;
+  height: 160px;   /* fixed height */
+  object-fit: contain; 
+  /* background-color: #000; optional: empty space ke liye background */
+  border-radius: 8px;
+}
+
+
+.food-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #222;
+}
+
+.food-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0;
+  color: darkgreen;
+  font-size: 16px;
+}
+
+.add-to-cart {
+  background: #e21b70; /* Foodpanda pink */
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #c2185b;
+}
+
+/* Cart Section */
+#cart {
+  width: 300px;
+  background: #f9f9f9;
+  border-left: 2px solid #ddd;
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+#cart h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+#cart ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#cart p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+#checkout {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #e21b70;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#checkout:hover {
+  background: #c2185b;
+}
+
+#bill {
+  display: none;
+  max-width: 400px;
+  margin: 30px auto;
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px dashed #ccc;
+  position: relative;
+}
+
+/* Bill Heading */
+#bill h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Bill Items */
+#bill-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#bill-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dotted #ddd;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Total Amount */
+#bill p {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+/* Decorative Cut Effect (like real receipt) */
+#bill {
+  display: none;
+  width: 100%;   /* cart ke width ke hisab se */
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px dashed #ccc;
+  position: relative;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  #logo {
+    margin: 0 auto 15px auto;
+    width: 200px;
+    height: 120px;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Page Layout */
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* Menu Section */
+  #menu {
+    padding: 20px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-card {
+    width: 90%; /* full width in mobile */
+  }
+
+  /* Cart Section */
+  #cart {
+    width: 100%;
+    margin-top: 20px;
+    position: static;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+
+  /* Bill Section */
+  #bill {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+  }
+}
+
+/* Extra small screens (phones < 480px) */
+@media (max-width: 480px) {
+  #menu h2 {
+    font-size: 24px;
+  }
+
+  .food-card h3 {
+    font-size: 18px;
+  }
+
+  .food-card p {
+    font-size: 13px;
+  }
+
+  #cart h2, #bill h2 {
+    font-size: 20px;
+  }
+
+  #checkout {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

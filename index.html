@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+
+      <!-- Food Card 1 -->
+      <div class="food-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYtEyzbggkdu_V17OP3zgM5xv96YiI7vqwg&s" alt="Burger">
+        <h3>Burger</h3>
+        <p>Delicious cheesy burger</p>
+        <span class="price">Rs 300</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Food Card 2 -->
+      <div class="food-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvPzrJ43zaVagXc1IWZB7Nv1o_hctrteeEUw&s" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Cheesy loaded pizza</p>
+        <span class="price">Rs 500</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Food Card 3 -->
+      <div class="food-card">
+        <img src="https://img.freepik.com/free-photo/fried-potatoes-french-fries-isolated-white-background_123827-26401.jpg" alt="Fries">
+        <h3>Fries</h3>
+        <p>Crispy golden fries</p>
+        <span class="price">Rs 150</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Food Card 4 -->
+        <div class="food-card">
+        <img src="https://thumbs.dreamstime.com/b/pasta-tomato-sauce-meat-cheese-herbs-delicious-penne-topped-rich-ground-fresh-grated-isolated-transparent-background-362771997.jpg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p>Cheesy loaded pasta</p>
+        <span class="price">Rs 500</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Food Card 5 -->
+      <div class="food-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4Y3Z9jhAq8Wx3dimGkEdzD9ByU7NEE1jvg&s" alt="Chicken Roll Paratha">
+        <h3>Chicken Roll Paratha</h3>
+        <p>chicken roll paratha</p>
+        <span class="price">Rs 500</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+       <!-- Food Card 6 -->
+       <div class="food-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStl-kZzxWW027Zpm0FacvEgJW4pzskJ1KeOQ&s" alt="Juice">
+        <h3>Juice</h3>
+        <p>Freshly squeezed juice</p>
+        <span class="price">Rs 200</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+ <div id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p><strong>Total: Rs <span id="cart-total">0</span></strong></p>
+  <button id="checkout">Checkout</button>
+
+  <!-- Bill Section Checkout ke niche -->
+  <section id="bill">
+    <h2>Bill Receipt</h2>
+    <ul id="bill-items"></ul>
+    <p><strong>Total: Rs <span id="bill-total">0</span></strong></p>
+  </section>
+</div>
+
+</main>
+
+<!-- Bill Section -->
+<section id="bill" style="display:none; margin-top:20px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+  <h2>Bill Receipt</h2>
+  <ul id="bill-items"></ul>
+  <p><strong>Total: Rs <span id="bill-total">0</span></strong></p>
+</section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
