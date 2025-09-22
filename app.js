@@ -81,3 +81,18 @@ addToCartButtons.forEach(button => {
     addToCart(name, price);
   });
 });
+// Footer Links Click Alert Example
+document.querySelectorAll(".footer-links a").forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert(`You clicked on: ${e.target.textContent}`);
+  });
+});
+
+// Social Icons Click Example
+document.querySelectorAll(".footer-socials a").forEach(icon => {
+  icon.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("This social link will open soon!");
+  });
+});

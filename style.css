@@ -340,3 +340,42 @@ main {
     padding: 10px;
   }
 }
+/* Footer Section */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #f1f1f1;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials a img {
+  width: 24px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1); /* White icons */
+  transition: transform 0.3s ease;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.2);
+}
